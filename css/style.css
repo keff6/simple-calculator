@@ -1,0 +1,91 @@
+@font-face {
+    font-family: digital7;
+    src: url(/vendor/digital-7.regular.ttf);
+}
+
+/* --------------------------------------------------------*/
+/*                    Generic Styles                       */
+/* --------------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url(/img/back.png);
+}
+
+
+
+/* --------------------------------------------------------*/
+/*      Snippet to eliminate arrows on input number        */
+/* --------------------------------------------------------*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} 
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/* --------------------------------------------------------*/
+/*      TODO                                               */
+/* --------------------------------------------------------*/
+.container{
+  width: 20%;
+  margin: auto;
+  margin-top: 20px;
+  border: #d1f1fa 2px solid;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #065f55;
+}
+
+.display,
+.buttons{
+  width:100%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.display input{
+  font-family: digital7;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  line-height: 50px;
+}
+
+.display input#display-subtotal{
+  line-height: 30px;
+  font-size: 25px;
+}
+
+.display input#display-result{
+  text-align: right;
+  font-size: 40px;
+}
+
+.buttons{
+  display:flex;
+}
+
+.numbers-grid{
+  width:80%;
+}
+
+.operands-grid{
+  width:20%;
+  display:grid;
+}
+
+.btn-number{
+  width:30%;
+  height:50px;
+  margin-bottom: 5px;
+  font-size: xx-large;
+  background-color: white;
+  border: 1px solid deepskyblue;
+  border-radius: 3px;
+}

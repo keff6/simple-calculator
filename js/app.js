@@ -1,13 +1,11 @@
 (function (doc) {
   
   //Constants
-  const UI_displayCurrent = doc.getElementById('display-current'),
+  const UI_displayCurrent = doc.getElementById('display-result'),
         UI_displaySubtotal = doc.getElementById('display-subtotal'),
         UI_numbersGrid = doc.querySelector('.numbers-grid'),
         UI_operandsGrid = doc.querySelector('.operands-grid'),
-        UI_btnReset = doc.getElementById("btn-reset");
-  
-  let result = 0;  
+        UI_btnReset = doc.getElementById("btn-reset");  
   
   // Numbers
   function appendNumber(e) {
@@ -36,16 +34,10 @@
       console.log("ERR " + error);
     }    
   }  
-  
-  function updateDisplay(){
-    UI_displaySubtotal.value = operationString;
-    UI_displayCurrent.value = result;
-  }
-  
-  function cleanDisplayValues(){
-    result =0;
-    UI_displaySubtotal.value = result;
-    UI_displayCurrent.value = 0;
+    
+  function cleanDisplayValues(){    
+    UI_displaySubtotal.value = "";
+    UI_displayCurrent.value = "";
   }  
   
   //Event Listeners
