@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/media.css" type="text/css">
   <title>Calculator</title>
 </head>
 
@@ -10,8 +11,8 @@
 
   <div class="container">
     <section class="display">
-      <input id="display-subtotal" type="text" placeholder="_">
-      <input id="display-result" type="number" placeholder="0">      
+      <input id="display-subtotal" type="text" placeholder="_" readonly>
+      <input id="display-result" type="number" placeholder="0" readonly>      
     </section>
 
     <section class="buttons">
@@ -32,7 +33,7 @@
           <button class="btn-number" value="3">3</button>
         </div>
         <div class="number-row">
-          <button class="btn-number" value="0">0</button>
+          <button class="btn-number wide" value="0">0</button>
           <button class="btn-number" value=".">.</button>
         </div>
       </div>

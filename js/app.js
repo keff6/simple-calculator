@@ -8,8 +8,10 @@
         UI_btnReset = doc.getElementById("btn-reset");  
   
   // Numbers
-  function appendNumber(e) {
-    UI_displaySubtotal.value += e.target.value;
+  function appendNumber(e){  
+    if(typeof e.target.value !== 'undefined'){
+      UI_displaySubtotal.value += e.target.value;
+    }      
   }  
   
   // Operands

@@ -37,12 +37,13 @@ input[type=number] {
   width: 20%;
   margin: auto;
   margin-top: 20px;
-  border: #d1f1fa 2px solid;
+  border: #1d5856 2px solid;
   border-radius: 5px;
   padding: 10px;
-  background-color: #065f55;
+  background-color: #afbfbd;
 }
 
+/* -------------- Display Screens -------------------*/
 .display,
 .buttons{
   width:100%;
@@ -55,18 +56,28 @@ input[type=number] {
   width: -webkit-fill-available;
   width: -moz-available;
   line-height: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .display input#display-subtotal{
   line-height: 30px;
   font-size: 25px;
+  border-bottom: none;
+  background-color: #0c1f1f;
+  color: #d0d9e2;
 }
 
 .display input#display-result{
   text-align: right;
   font-size: 40px;
+  border-top: none;
+  background-color: #0c1f1f;
+  color: #d0d9e2;
 }
 
+
+/* ------------------- Buttons -----------------------*/
 .buttons{
   display:flex;
 }
@@ -80,12 +91,48 @@ input[type=number] {
   display:grid;
 }
 
+.btn-number,
+.btn-operand{  
+  background-color: white;
+  border: 1px solid #1d5856;
+  border-radius: 3px;
+}
+
+
+.btn-number:hover,
+.btn-operand:hover{  
+  background-color: rgb(34, 117, 156);
+    border: 1px solid #1d5856;
+    border-radius: 3px;
+    color: white;
+}    
+
 .btn-number{
   width:30%;
   height:50px;
   margin-bottom: 5px;
   font-size: xx-large;
-  background-color: white;
-  border: 1px solid deepskyblue;
+}
+
+.btn-number.wide{
+  width:62%;
+}
+
+
+#btn-reset,
+.btn-operand{
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+#btn-reset{
+  color: #fff;
+  background-color: rgba(175, 12, 12, 0.94);
+  border: 1px solid #020f14;
   border-radius: 3px;
+}
+
+#btn-reset:hover{
+  background-color: rgba(147, 7, 7, 0.94);
+  font-weight: bold;
 }
